@@ -155,26 +155,14 @@ export const projectData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Project Management Skills', 
-        description: (<>
-            <strong>Agile Practices</strong><br />Scrum, Kanban, Sprint Planning, Backlog Management, Stand-ups, Reviews, Retros
-            <br />
-            <br />
-            <strong>Collaboration & Leadership</strong><br />Team coordination, communication, task organization
-        </>
-    )},
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Data Analysis Skills', 
-        description:  (<>
-            <strong>Technical Skills</strong><br />SQL, DAX, Python
-            <br />
-            <br />
-            <strong>Data Capabilities</strong><br />Data cleaning, interpretation, visualization, reporting
-        </>
-    ) },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', 
+        description: 'HTML, CSS, Java, JavaScript, Dart'},
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Frameworks', 
+        description: 'React.js, Next.js, Node.js, Express.js, Tailwind CSS, Flutter, Bootstrap'},
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'BSc (Hons) in Computing and Information Systems' }
     
 ];
 
 export const toolsData = [
-    assets.excel, assets.jira, assets.trello, assets.notion, assets.power_bi, assets.tableau_icon, assets.mysql, assets.vscode, assets.figma, assets.git
+    assets.vscode, assets.figma, assets.git, assets.firebase, assets.mongodb
 ];
