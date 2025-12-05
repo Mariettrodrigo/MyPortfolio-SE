@@ -9,11 +9,11 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "motion": "^12.23.22",
-    "next": "^15.1.9",
-    "react": "^19.0.1",
-    "react-dom": "^19.0.1"
-  },
+  "motion": "^12.23.22",
+  "next": "14.2.9",
+  "react": "^19.0.1",
+  "react-dom": "^19.0.1"
+},
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
