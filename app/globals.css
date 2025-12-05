@@ -1,0 +1,113 @@
+
+@import "tailwindcss";
+
+/* ---------- Root variables ---------- */
+:root {
+  --color-lightHover: #fcf4ff;
+  --color-darkHover: #2a004a;
+  --color-darkTheme: #fff; /* fallback for light mode */
+  --font-outfit: "Outfit", sans-serif;
+  --font-ovo: "Ovo", serif;
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
+  --grid-cols-auto: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* ---------- Dark mode overrides ---------- */
+.dark {
+  --color-darkTheme: #11001F; /* background for dark mode */
+}
+
+/* ---------- Fonts ---------- */
+body {
+  font-family: var(--font-outfit);
+}
+
+/* ---------- Dark mode text rules ----------
+   Keep this minimal! Don’t force *everything* white,
+   let Tailwind's `dark:` utilities handle most text.
+*/
+.dark body {
+  color: white;
+}
+
+.dark a,
+.dark h3 {
+  color: white;
+}
+
+/* ---------- Custom background utilities ---------- */
+@layer utilities {
+  .bg-darkHover {
+    background-color: var(--color-darkHover);
+  }
+
+  .bg-lightHover {
+    background-color: var(--color-lightHover);
+  }
+}
+
+
+/*@import "tailwindcss";
+
+:root {
+  --color-lightHover: #fcf4ff;
+  --color-darkHover: #2a004a;
+  --color-darkTheme: #fff; /* fallback for light mode */
+  /*--font-outfit: "Outfit", sans-serif;
+  --font-ovo: "Ovo, serif";
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
+  --grid-cols-auto: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.dark {
+  --color-darkTheme: #11001F; /* dark mode value 
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+/*.dark body,
+.dark body * {
+  color: white !important;
+}*/
+
+/*.dark body {
+  background-color: var(--color-darkTheme);
+  color: white;
+}
+
+.dark p,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark span,
+.dark a {
+  color: white;
+}
+
+.dark a,
+.dark h3,
+.dark span 
+{
+  color: white;
+}
+
+.dark body{
+  color: white;
+}
+
+@layer utilities{
+.bg-darkHover {
+  background-color: #2a004a; /* your dark theme color 
+}
+
+.bg-lightHover {
+  background-color: #fcf4ff;
+}
+}*/
